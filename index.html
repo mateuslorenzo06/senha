@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="conteudo">
+    <h3 class="parametro-titulo">Personalize sua senha</h3>
+
+    <!-- Número de caracteres -->
+    <div class="parametro-senha">
+      <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+      <div class="parametro-senha-botoes">
+        <button class="parametro-senha__botao">-</button>
+        <p class="parametro-senha__texto">12</p>
+        <button class="parametro-senha__botao">+</button>
+      </div>
+    </div>
+
+    <!-- Características da senha -->
+    <div class="parametro-senha">
+      <h4 class="parametro-senha__titulo">Características da senha</h4>
+      <label><input type="checkbox" class="checkbox" checked> Letras maiúsculas</label>
+      <label><input type="checkbox" class="checkbox"> Letras minúsculas</label>
+      <label><input type="checkbox" class="checkbox"> Números</label>
+      <label><input type="checkbox" class="checkbox"> Símbolos</label>
+    </div>
+
+    <!-- Força da senha -->
+    <div class="parametro-senha">
+      <h4 class="parametro-senha__titulo">Força da senha</h4>
+      <div class="barra">
+        <div class="forca"></div>
+      </div>
+      <div class="parametro-senha-textos">
+        <p>Fraca</p>
+        <p>Média</p>
+        <p>Forte</p>
+      </div>
+      <p class="entropia"></p>
+    </div>
+
+    <!-- Campo da senha -->
+    <input type="text" id="campo-senha" readonly>
+
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>
